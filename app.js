@@ -44,23 +44,22 @@ const PORT = 5050;
 
 app.use(
   cors({
-    origin: [
-      "https://borvey.com",
-      "https://www.borvey.com",
-      "https://borvey-admin-panel.vercel.app",
-      "https://borvey-backend-13d056a7e6c7.herokuapp.com",
-      "https://borvey-frontend-445a9cc91c1d.herokuapp.com",
-      "http://localhost:5050",
-      "http://localhost:3000",
-      "http://localhost:3001"
-    ],
+    // origin: [
+    //   "https://borvey.com",
+    //   "https://www.borvey.com",
+    //   "https://borvey-admin-panel.vercel.app",
+    //   "https://borvey-backend-13d056a7e6c7.herokuapp.com",
+    //   "https://borvey-frontend-445a9cc91c1d.herokuapp.com",
+    //   "http://localhost:5050",
+    //   "http://localhost:3000",
+    //   "http://localhost:3001"
+    // ],
+    origin:true,
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
   })
 );
-
-app.set('trust proxy', 1);
 
 app.use(express.static("public"));
 app.use(
