@@ -48,7 +48,8 @@ app.use(
       "https://borvey.com",
       "https://www.borvey.com",
       "https://borvey-admin-panel.vercel.app",
-      "https://borvey-backend-a8f223c668a5.herokuapp.com/",
+      "https://borvey-backend-13d056a7e6c7.herokuapp.com",
+      `${process.env.PUBLIC_URL}`,
       "http://localhost:3000",
       "http://localhost:3001"
     ],
