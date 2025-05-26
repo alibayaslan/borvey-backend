@@ -49,7 +49,7 @@ app.use(
       "https://www.borvey.com",
       "https://borvey-admin-panel.vercel.app",
       "https://borvey-backend-13d056a7e6c7.herokuapp.com",
-      `${process.env.PUBLIC_URL}`,
+      process.env.PUBLIC_URL,
       "http://localhost:3000",
       "http://localhost:3001"
     ],
